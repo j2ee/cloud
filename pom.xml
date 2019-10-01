@@ -17,6 +17,7 @@
     <modules>
         <module>cloud-database</module>
         <module>cloud-config</module>
+        <module>cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 

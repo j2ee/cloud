@@ -19,6 +19,7 @@
         <module>cloud-config</module>
         <module>cloud-gateway</module>
         <module>cloud-alibaba</module>
+        <module>cloud-netflix</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -19,22 +19,22 @@
 
     <modules>
         <module>cloud-alibaba</module>
+        <module>cloud-circuit-breaker</module>
         <module>cloud-config</module>
         <module>cloud-database</module>
         <module>cloud-discovery</module>
         <module>cloud-gateway</module>
+        <module>cloud-mall</module>
         <module>cloud-netflix</module>
         <module>cloud-routing</module>
-        <module>cloud-circuit-breaker</module>
-        <module>cloud-mall</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <spring.boot.version>2.1.0.RELEASE</spring.boot.version>
-        <spring.cloud.version>Greenwich.SR4</spring.cloud.version>
+        <spring.boot.version>2.1.12.RELEASE</spring.boot.version>
+        <spring.cloud.version>Greenwich.SR5</spring.cloud.version>
     </properties>
 
     <dependencyManagement>

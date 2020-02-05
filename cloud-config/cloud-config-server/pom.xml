@@ -14,6 +14,7 @@
     <modules>
         <module>cloud-config-server-jdbc</module>
         <module>cloud-config-server-git</module>
+        <module>cloud-config-server-native</module>
     </modules>
 
 </project>

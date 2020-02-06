@@ -18,14 +18,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>cloud-alibaba</module>
         <module>cloud-circuit-breaker</module>
         <module>cloud-config</module>
         <module>cloud-database</module>
         <module>cloud-discovery</module>
-        <module>cloud-gateway</module>
         <module>cloud-mall</module>
-        <module>cloud-netflix</module>
         <module>cloud-routing</module>
     </modules>
 
@@ -63,6 +60,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>

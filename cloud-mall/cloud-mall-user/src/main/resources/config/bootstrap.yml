@@ -6,7 +6,7 @@ spring:
       enabled: true
       name: cloud-mall-user
       discovery:
-        service-id: CLOUD-CONFIG-SERVER-NATIVE
+        service-id: CLOUD-CONFIG-SERVER
         enabled: true
       profile: dev
 eureka:

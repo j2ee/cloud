@@ -1,3 +1,0 @@
-spring:
-  application:
-    name: cloud-netflix-eureka-server

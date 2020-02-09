@@ -7,6 +7,8 @@ eureka:
     lease-renewal-interval-in-seconds: 30
     # 心跳过期间隔
     lease-expiration-duration-in-seconds: 90
+  environment: dev
+  datacenter: dev
   client:
     register-with-eureka: false
     fetch-registry: false

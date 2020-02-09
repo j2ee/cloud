@@ -24,6 +24,7 @@
         <module>cloud-discovery</module>
         <module>cloud-mall</module>
         <module>cloud-routing</module>
+        <module>cloud-admin</module>
     </modules>
 
     <properties>

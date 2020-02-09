@@ -1,1 +1,7 @@
-zuul: default
+server:
+  port: 9590
+zuul:
+  routes:
+    cloud-mall-user:
+      service-id: cloud-mall-user
+      path: /users/**

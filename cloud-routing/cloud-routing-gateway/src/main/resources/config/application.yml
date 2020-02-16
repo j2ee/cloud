@@ -1,21 +1,37 @@
 server:
   port: 9590
 eureka:
+  instance:
+    hostname: ${spring.cloud.client.ip-address}
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   client:
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.port}/eureka/
-redis:
-  host: 127.0.0.1
-    port: 6379
-
+      defaultZone: http://${spring.cloud.client.ip-address}:9500/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: gateway
+#redis:
+#  host: 127.0.0.1
+#    port: 6379
 cloud:
   gateway:
     routes:
-    # 请求路径匹配
-      - id: path_route
-    uri: http://www.lhdyx.cn
-      predicates:
-        - Path=/lhd/**
+      # 请求路径匹配
+      - id: cloud-mall-user
+        uri: lb：//cloud-mall-user
+        predicates:
+          - Before=2018-01-20T17:42:47.789-07:00[America/Denver]
+          - Between=2017-01-20T17:42:47.789-07:00[America/Denver], 2027-01-21T17:42:47.789-07:00[America/Denver]
+          - After=2030-01-20T17:42:47.789-07:00[America/Denver]
+          - Cookie=somecookie, ch.p
+          - Header=X-Request-Id, \d+
+          - Host=**.somehost.org,**.anotherhost.org
+          - Metod=GET
+          - Path=/users/{segment},/some-path/**
+          - Query=foo, ba.
+          - RemoteAddr=192.168.1.1/24
       # 请求地址携带lhd的,则转发
       # 加上StripPrefix=1，否则转发到后端服务时会带上前缀
         filters:

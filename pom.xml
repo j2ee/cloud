@@ -18,13 +18,20 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>cloud-admin</module>
+        <module>cloud-bootstrap</module>
         <module>cloud-circuit-breaker</module>
         <module>cloud-config</module>
         <module>cloud-database</module>
         <module>cloud-discovery</module>
+        <module>cloud-function</module>
         <module>cloud-mall</module>
+        <module>cloud-messaging</module>
         <module>cloud-routing</module>
-        <module>cloud-admin</module>
+        <module>cloud-security</module>
+        <module>cloud-task</module>
+        <module>cloud-tools</module>
+        <module>cloud-tracing</module>
     </modules>
 
     <properties>
